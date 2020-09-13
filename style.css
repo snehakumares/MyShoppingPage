@@ -1,0 +1,1228 @@
+    /* CSS HEX 
+--dark-purple: #242038ff;
+--light-pink: #f7b2b7ff;
+--beau-blue: #c7dbe6ff;
+--nickel: #626c66ff;
+--metallic-seaweed: #1f7a8cff;*/
+    
+    html {
+        font-family: 'Source Serif Pro', serif, sans-serif;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav {
+        height: 50px;
+        width: 100%;
+        background-color: #242038ff;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul {
+        float: right;
+        padding-right: 3vw;
+    }
+    
+    nav ul li {
+        list-style-type: none;
+        color: white;
+        padding-left: 3vw;
+        float: left;
+    }
+    
+    nav ul li button {
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+    }
+    
+    .modal {
+        background-color: rgb(251, 205, 205, 0.6);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+    }
+    
+    .modal .modalcontent #loginimage {
+        width: 396px;
+        height: 396px;
+        padding-left: 5vw;
+    }
+    
+    .modal .modalcontent {
+        background-color: white;
+        padding: 2%;
+        padding-right: 0;
+        margin: 3vh;
+        border: 10px solid #f7b2b7ff;
+    }
+    
+    .modal .modalcontent .modalitems {
+        padding-top: 5vh;
+        padding-right: 2vw;
+        padding-left: 3vw;
+        float: left;
+    }
+    
+    .modal .modalcontent .modalitems h1 {
+        text-align: center;
+        padding: 3%;
+    }
+    
+    .modal .modalcontent .close {
+        float: right;
+        left: 2%;
+        cursor: pointer;
+        padding-right: 5%;
+        color: black;
+        font-weight: bold;
+    }
+    
+    .modal .modalcontent .modalitems form div {
+        padding-bottom: 2vh;
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+    
+    .modal .modalcontent .modalitems form .submitbutton {
+        text-align: center;
+        padding-top: 2vh;
+    }
+    
+    .modal .modalcontent .modalitems form .submitbutton button {
+        text-align: center;
+        background-color: #f7b2b7ff;
+        color: black;
+        font-weight: bold;
+        padding: 5%;
+        padding-left: 7%;
+        padding-right: 7%;
+        outline: none;
+        box-shadow: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .logo {
+        width: 100%;
+        background-color: #99d6e2;
+    }
+    
+    .logo .logocontent {
+        display: grid;
+        grid-template-columns: 20vw 20vw 40vw 20vw;
+    }
+    
+    .logo .logocontent img {
+        width: 72px;
+        padding-left: 16vw;
+        margin-top: 1vh;
+    }
+    
+    .logo .logocontent img:last-child {
+        padding-left: 1vw;
+        width: 25px;
+        margin-top: 3vh;
+    }
+    
+    .logo .logocontent h1 {
+        margin-top: 1vh;
+        font-size: 2.75em;
+        color: #242038ff;
+        font-family: 'Srisakdi', cursive;
+        position: relative;
+        padding-left: 1vw;
+    }
+    
+    .logo .logocontent input {
+        height: 1em;
+        margin-top: 3vh;
+        font-size: 1.15em;
+        padding: 0.15em;
+    }
+    
+    .tabnav .tablink {
+        background-color: #242038ff;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 20%;
+    }
+    
+    .topnav {
+        display: none;
+    }
+    
+    .tabnav .tablink:hover {
+        background-color: white;
+        color: black;
+        font-weight: bolder;
+    }
+    
+    .tabcontent {
+        color: white;
+        display: none;
+        padding: 40px 20px;
+        height: 100%;
+    }
+    
+    #Home {
+        background-color: #f7b2b7ff;
+        height: 100vh;
+    }
+    
+    #Category_1 {
+        background-color: #c7dbe6ff;
+    }
+    
+    #Category_2 {
+        background-color: #c7dbe6ff;
+    }
+    
+    #Contact {
+        background-color: rgb(147, 163, 153);
+    }
+    
+    #About {
+        background-color: #1f7a8cff;
+    }
+    
+    #Home ul {
+        display: flex;
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    #Home ul .mySlides h3 {
+        padding-top: 10vh;
+        float: right;
+        font-family: 'Inconsolata', monospace;
+        font-size: 3em;
+        width: 30vw;
+        text-align: center;
+    }
+    
+    #Home .mySlides img {
+        width: 30vw;
+        padding-left: 20vw;
+    }
+    
+    #Home button.prev,
+    button.next {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        color: #FFF;
+        background-color: #333;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+    }
+    
+    #Home button.prev {
+        position: absolute;
+        left: 0;
+        top: 40vh;
+    }
+    
+    #Home button.next {
+        position: absolute;
+        right: 0;
+        top: 40vh;
+    }
+    
+    #Home #homeothers {
+        background-color: white;
+        width: 100%;
+        padding-left: 0;
+    }
+    
+    #Contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 1.25em;
+        overflow-y: hidden;
+    }
+    
+    #Contact .contactcontents {
+        background-color: #626c66ff;
+        margin: 15%;
+        float: left;
+        display: flex;
+        padding: 10%;
+    }
+    
+    #Contact .contactcontents form {
+        padding-right: 10vw;
+    }
+    
+    #Contact .contactcontents .contactothers {
+        text-align: center;
+        display: table;
+        height: 481.52px;
+    }
+    
+    #Contact .contactcontents .contactothers .others {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    #Contact .contactcontents .contactothers .others h4,
+    #Contact .contactcontents .contactothers .others h3 {
+        margin: 0;
+    }
+    
+    #Contact .contactcontents form div {
+        padding-bottom: 2vh;
+    }
+    
+    #Contact .contactcontents form div label {
+        padding-bottom: 1vh;
+    }
+    
+    #Contact .contactcontents form h2,
+    #Contact .contactcontents form #submit {
+        text-align: center;
+    }
+    
+    #Contact .contactcontents form #submit button {
+        padding: 0 3%;
+        font-size: 0.95em;
+        background-color: transparent;
+        color: white;
+        font-weight: 300;
+    }
+    
+    #Contact .contactcontents form #submit button h4 {
+        margin: 0;
+    }
+    
+    #About {
+        height: 100%;
+        overflow-y: hidden;
+        display: table;
+        font-family: 'Dancing Script', cursive;
+    }
+    
+    #About .aboutcontents {
+        display: table-cell;
+        vertical-align: middle;
+        color: #1b262c;
+        text-align: center;
+        width: 100vw;
+    }
+    
+    #About .aboutcontents div {
+        margin: 2%;
+        float: left;
+        align-items: center;
+        padding: 1vw;
+        height: auto;
+        width: 25vw;
+    }
+    
+    #About .aboutcontents div img {
+        width: 300px;
+        padding-top: 10px;
+        height: 234px;
+        vertical-align: middle;
+    }
+    
+    #About .aboutcontents div h5 {
+        margin-bottom: 0px;
+        font-size: 1.5em;
+        text-align: center;
+        color: white;
+    }
+    
+    #About .aboutcontents .aboutcontents1 {
+        font-family: 'Aldrich', sans-serif;
+    }
+    
+    #About .aboutcontents .aboutcontents1 img {
+        width: 100px;
+        margin-top: 20px;
+        height: auto;
+        border-radius: 100%;
+        background-color: white;
+    }
+    
+    #About .aboutcontents .aboutcontents1 div h5 {
+        margin-top: 5vh;
+        font-family: 'Aldrich', sans-serif;
+    }
+    
+    #Category_1 {
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+    }
+    
+    #Category_1 .categorycontent {
+        margin-top: 10vh;
+        display: grid;
+        grid-template-columns: 30vw 30vw 30vw;
+    }
+    
+    #Category_1 .categorycontent .card {
+        margin-bottom: 10vh;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        background-color: white;
+        width: 300px;
+        text-align: center;
+        font-family: arial;
+        float: left;
+        color: black;
+        justify-self: center;
+        cursor: pointer;
+    }
+    
+    #Category_1 .categorycontent .card img {
+        width: 70%;
+        height: 248px;
+    }
+    
+    #Category_1 .categorycontent .card .price {
+        color: grey;
+        font-size: 22px;
+    }
+    
+    #Category_1 .categorycontent .card p button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    #Category_1 .categorycontent .card p button:hover {
+        opacity: 0.7;
+    }
+    
+    #categorymodal {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    #categorymodal .categorymodalcontent {
+        width: 80vw;
+        height: 80vh;
+        background-color: white;
+    }
+    
+    .footer {
+        background-color: #242038ff;
+        min-height: 300px;
+        width: 100%;
+        color: white;
+    }
+    
+    .footer div {
+        padding: 2% 31%;
+    }
+    
+    .footer .contactaddress {
+        padding: 0;
+        text-align: center;
+    }
+    
+    .footer .contactaddress #email {
+        float: left;
+    }
+    
+    .footer a {
+        float: left;
+        color: white;
+        text-decoration: none;
+        padding: 0 5%;
+    }
+    
+    @media (max-width:424px) {
+        nav ul {
+            padding-right: 0vw;
+            display: grid;
+            grid-template-columns: 25vw 25vw 25vw 25vw;
+        }
+        nav ul li {
+            padding-left: 0vw;
+            float: left;
+            text-align: center;
+        }
+        .modal .modalcontent #loginimage {
+            display: none;
+        }
+        .modal .modalcontent {
+            background-color: white;
+            padding: 1%;
+            width: 85vw;
+            border: 5px solid #f7b2b7ff;
+        }
+        .modal .modalcontent .modalitems {
+            padding-top: 0vh;
+            padding-left: 10vw;
+            padding-right: 5vw;
+        }
+        .modal .modalcontent .modalitems h1 {
+            padding-bottom: 0.25vh;
+        }
+        .modal .modalcontent .close {
+            left: 2%;
+            padding-right: 0%;
+        }
+        .modal .modalcontent .modalitems form div {
+            padding-bottom: 0.25vh;
+        }
+        .modal .modalcontent .modalitems form div input {
+            width: 60vw;
+        }
+        .modal .modalcontent .modalitems form .submitbutton {
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+        }
+        .logo .logocontent {
+            display: grid;
+            grid-template-columns: 100vw;
+            grid-template-rows: 30px 60px 50px;
+            padding-left: 0;
+        }
+        .logo .logocontent img {
+            width: 50px;
+            padding-left: 43vw;
+        }
+        .logo .logocontent img:last-child {
+            display: none;
+        }
+        .logo .logocontent h1 {
+            margin-top: 3vh;
+            font-size: 2em;
+            padding-left: 1vw;
+            text-align: center;
+        }
+        .logo .logocontent input {
+            height: 1em;
+            margin-top: 2vh;
+            margin-bottom: 0;
+            font-size: 0.75em;
+            padding: 0.15em;
+            padding-left: 0;
+        }
+        .tabnav {
+            display: none;
+        }
+        .topnav {
+            display: table;
+            width: 100%;
+            background-color: #242038ff;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            background-color: #242038ff;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+        .topnav a.icon {
+            float: right;
+            display: block;
+            background: #242038ff;
+            color: white;
+        }
+        .topnav.responsive {
+            position: relative;
+        }
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+        #Home {
+            height: 100vh;
+        }
+        #Home ul .mySlides h3 {
+            padding-top: 0.5vh;
+            float: none;
+            font-size: 1.5em;
+            width: 100%;
+            text-align: center;
+            padding-left: 0;
+        }
+        #Home .mySlides img {
+            width: 80vw;
+            padding-left: 5vw;
+        }
+        #Home button.prev,
+        button.next {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #FFF;
+            background-color: #333;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+        #Home button.prev {
+            top: 50vh;
+        }
+        #Home button.next {
+            top: 50vh;
+        }
+        #Contact {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 1em;
+        }
+        #Contact .contactcontents {
+            background-color: #626c66ff;
+            margin: 0;
+            float: none;
+            display: inline;
+            padding: 10%;
+        }
+        #Contact .contactcontents form {
+            padding-right: 10vw;
+            padding-left: 10vw;
+        }
+        #Contact .contactcontents .contactothers {
+            text-align: center;
+            display: table;
+            height: 200px;
+            width: 100%;
+        }
+        #About {
+            height: 100%;
+        }
+        #About .aboutcontents {
+            width: 100vw;
+        }
+        #About .aboutcontents div {
+            border-bottom: 3px solid #000;
+            float: none;
+            align-items: center;
+            height: auto;
+            width: 90%;
+            padding-bottom: 10%;
+        }
+        #About .aboutcontents div:last-child {
+            border-bottom: 0;
+        }
+        #About .aboutcontents div img {
+            padding-top: 1px;
+        }
+        #About .aboutcontents div h5 {
+            margin-bottom: 0px;
+            margin-top: 5px;
+            font-size: 1.5em;
+            text-align: center;
+            color: white;
+        }
+        #Cateogory_1 {
+            padding: 0px;
+            margin: 0;
+        }
+        #Category_1 .categorycontent {
+            margin-top: 5vh;
+            display: grid;
+            grid-template-columns: 80vw;
+        }
+        #Category_1 .categorycontent .card {
+            margin-bottom: 5vh;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background-color: white;
+            max-width: 300px;
+            float: none;
+            color: black;
+            justify-self: center;
+        }
+        #Category_1 .categorycontent .card img {
+            width: 70%;
+            height: 248px;
+        }
+        #Category_1 .categorycontent .card .price {
+            font-size: 20px;
+        }
+        #Category_1 .categorycontent .card p button {
+            width: 100%;
+            font-size: 15px;
+        }
+    }
+    
+    @media (min-width:425px) and (max-width:767px) {
+        nav ul {
+            padding-right: 0vw;
+            display: grid;
+            grid-template-columns: 25vw 25vw 25vw 25vw;
+        }
+        nav ul li {
+            padding-left: 0vw;
+            float: left;
+            text-align: center;
+        }
+        .modal .modalcontent #loginimage {
+            display: none;
+        }
+        .modal .modalcontent {
+            background-color: white;
+            padding: 1%;
+            width: 85vw;
+            border: 5px solid #f7b2b7ff;
+        }
+        .modal .modalcontent .modalitems {
+            padding-top: 0vh;
+            padding-left: 10vw;
+            padding-right: 5vw;
+        }
+        .modal .modalcontent .modalitems h1 {
+            padding-bottom: 0.25vh;
+        }
+        .modal .modalcontent .close {
+            left: 2%;
+            padding-right: 0%;
+        }
+        .modal .modalcontent .modalitems form div {
+            padding-bottom: 0.25vh;
+        }
+        .modal .modalcontent .modalitems form div input {
+            width: 60vw;
+        }
+        .modal .modalcontent .modalitems form .submitbutton {
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+        }
+        .logo .logocontent {
+            display: grid;
+            grid-template-columns: 100vw;
+            grid-template-rows: 30px 60px 50px;
+            padding-left: 0;
+        }
+        .logo .logocontent img {
+            width: 50px;
+            padding-left: 43vw;
+        }
+        .logo .logocontent img:last-child {
+            display: none;
+        }
+        .logo .logocontent h1 {
+            margin-top: 3vh;
+            font-size: 2em;
+            padding-left: 1vw;
+            text-align: center;
+        }
+        .logo .logocontent input {
+            height: 1em;
+            margin-top: 2vh;
+            margin-bottom: 0;
+            font-size: 0.75em;
+            padding: 0.15em;
+            padding-left: 0;
+        }
+        .tabnav {
+            display: none;
+        }
+        .topnav {
+            display: table;
+            width: 100%;
+            background-color: #242038ff;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            background-color: #242038ff;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+        .topnav a.icon {
+            float: right;
+            display: block;
+            background: #242038ff;
+            color: white;
+        }
+        .topnav.responsive {
+            position: relative;
+        }
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+        #Home {
+            height: 100vh;
+        }
+        #Home ul .mySlides h3 {
+            padding-top: 0.5vh;
+            float: none;
+            font-size: 1.5em;
+            width: 100%;
+            text-align: center;
+            padding-left: 5vw;
+        }
+        #Home .mySlides img {
+            width: 80vw;
+            padding-left: 10vw;
+        }
+        #Home button.prev,
+        button.next {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #FFF;
+            background-color: #333;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+        #Home button.prev {
+            top: 55vh;
+        }
+        #Home button.next {
+            top: 55vh;
+        }
+        #Contact {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 1em;
+        }
+        #Contact .contactcontents {
+            background-color: #626c66ff;
+            margin: 0;
+            float: none;
+            display: inline;
+            padding: 10%;
+        }
+        #Contact .contactcontents form {
+            padding-right: 10vw;
+            padding-left: 10vw;
+        }
+        #Contact .contactcontents form #submit {
+            text-align: center;
+            align-items: center;
+            justify-self: center;
+        }
+        #Contact .contactcontents .contactothers {
+            text-align: center;
+            display: table;
+            height: 200px;
+            width: 100%;
+        }
+        #About {
+            height: 100%;
+        }
+        #About .aboutcontents {
+            width: 100vw;
+        }
+        #About .aboutcontents div {
+            border-bottom: 3px solid #000;
+            float: none;
+            align-items: center;
+            height: auto;
+            width: 90%;
+            padding-bottom: 10%;
+        }
+        #About .aboutcontents div:last-child {
+            border-bottom: 0;
+        }
+        #About .aboutcontents div img {
+            padding-top: 1px;
+        }
+        #About .aboutcontents div h5 {
+            margin-bottom: 0px;
+            margin-top: 5px;
+            font-size: 1.5em;
+            text-align: center;
+            color: white;
+        }
+        #Cateogory_1 {
+            padding: 0px;
+            margin: 0;
+        }
+        #Category_1 .categorycontent {
+            margin-top: 5vh;
+            display: grid;
+            grid-template-columns: 80vw;
+        }
+        #Category_1 .categorycontent .card {
+            margin-bottom: 5vh;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background-color: white;
+            max-width: 300px;
+            float: none;
+            color: black;
+            justify-self: center;
+        }
+        #Category_1 .categorycontent .card img {
+            width: 70%;
+            height: 248px;
+        }
+        #Category_1 .categorycontent .card .price {
+            font-size: 20px;
+        }
+        #Category_1 .categorycontent .card p button {
+            width: 100%;
+            font-size: 15px;
+        }
+    }
+    
+    @media (min-width:768px) and (max-width:1023px) {
+        nav ul {
+            padding-right: 0vw;
+            display: grid;
+            grid-template-columns: 25vw 25vw 25vw 25vw;
+        }
+        nav ul li {
+            padding-left: 0vw;
+            float: left;
+            text-align: center;
+        }
+        .modal .modalcontent #loginimage {
+            display: none;
+        }
+        .modal .modalcontent {
+            background-color: white;
+            padding: 1%;
+            width: 85vw;
+            border: 5px solid #f7b2b7ff;
+        }
+        .modal .modalcontent .modalitems {
+            padding-top: 0vh;
+            padding-left: 10vw;
+            padding-right: 5vw;
+        }
+        .modal .modalcontent .modalitems h1 {
+            padding-bottom: 0.25vh;
+        }
+        .modal .modalcontent .close {
+            left: 2%;
+            padding-right: 0%;
+        }
+        .modal .modalcontent .modalitems form div {
+            padding-bottom: 0.25vh;
+        }
+        .modal .modalcontent .modalitems form div input {
+            width: 60vw;
+        }
+        .modal .modalcontent .modalitems form .submitbutton {
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+        }
+        .logo .logocontent {
+            display: grid;
+            grid-template-columns: 100vw;
+            grid-template-rows: 30px 60px 50px;
+            padding-left: 0;
+        }
+        .logo .logocontent img {
+            width: 50px;
+            padding-left: 43vw;
+        }
+        .logo .logocontent img:last-child {
+            display: none;
+        }
+        .logo .logocontent h1 {
+            margin-top: 3vh;
+            font-size: 2em;
+            padding-left: 1vw;
+            text-align: center;
+        }
+        .logo .logocontent input {
+            height: 1em;
+            margin-top: 2vh;
+            margin-bottom: 0;
+            font-size: 0.75em;
+            padding: 0.15em;
+            padding-left: 0;
+        }
+        .tabnav {
+            display: none;
+        }
+        .topnav {
+            display: table;
+            width: 100%;
+            background-color: #242038ff;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            background-color: #242038ff;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+        .topnav a.icon {
+            float: right;
+            display: block;
+            background: #242038ff;
+            color: white;
+        }
+        .topnav.responsive {
+            position: relative;
+        }
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+        #Home {
+            height: 100vh;
+        }
+        #Home ul .mySlides h3 {
+            padding-top: 0.5vh;
+            float: none;
+            font-size: 1.5em;
+            width: 100%;
+            text-align: center;
+            padding-left: 5vw;
+        }
+        #Home .mySlides img {
+            width: 80vw;
+            padding-left: 10vw;
+        }
+        #Home button.prev,
+        button.next {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #FFF;
+            background-color: #333;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+        #Home button.prev {
+            top: 55vh;
+        }
+        #Home button.next {
+            top: 55vh;
+        }
+        #Contact {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 1em;
+        }
+        #Contact .contactcontents {
+            background-color: #626c66ff;
+            margin: 0;
+            float: none;
+            display: inline;
+            padding: 10%;
+        }
+        #Contact .contactcontents form {
+            padding-right: 10vw;
+            padding-left: 10vw;
+        }
+        #Contact .contactcontents form #submit {
+            text-align: center;
+            align-items: center;
+            justify-self: center;
+        }
+        #Contact .contactcontents .contactothers {
+            text-align: center;
+            display: table;
+            height: 200px;
+            width: 100%;
+        }
+        #About {
+            height: 100%;
+        }
+        #About .aboutcontents {
+            width: 100vw;
+        }
+        #About .aboutcontents div {
+            border-bottom: 3px solid #000;
+            float: none;
+            align-items: center;
+            height: auto;
+            width: 90%;
+            padding-bottom: 10%;
+        }
+        #About .aboutcontents div:last-child {
+            border-bottom: 0;
+        }
+        #About .aboutcontents div img {
+            padding-top: 1px;
+        }
+        #About .aboutcontents div h5 {
+            margin-bottom: 0px;
+            margin-top: 5px;
+            font-size: 1.5em;
+            text-align: center;
+            color: white;
+        }
+        #Cateogory_1 {
+            padding: 0px;
+            margin: 0;
+        }
+        #Category_1 .categorycontent {
+            margin-top: 5vh;
+            display: grid;
+            grid-template-columns: 80vw;
+        }
+        #Category_1 .categorycontent .card {
+            margin-bottom: 5vh;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background-color: white;
+            max-width: 300px;
+            float: none;
+            color: black;
+            justify-self: center;
+        }
+        #Category_1 .categorycontent .card img {
+            width: 70%;
+            height: 248px;
+        }
+        #Category_1 .categorycontent .card .price {
+            font-size: 20px;
+        }
+        #Category_1 .categorycontent .card p button {
+            width: 100%;
+            font-size: 15px;
+        }
+    }
+    
+    @media (min-width:1024px) and (max-width:1439px) {
+        .logo {
+            width: 100%;
+            background-color: #99d6e2;
+        }
+        .logo .logocontent {
+            display: grid;
+            grid-template-columns: 10vw 40vw 40vw 10vw;
+        }
+        .logo .logocontent img {
+            width: 72px;
+            padding-left: 8vw;
+            margin-top: 1vh;
+        }
+        .logo .logocontent img:last-child {
+            padding-left: 3vw;
+            width: 25px;
+            margin-top: 3vh;
+        }
+        .logo .logocontent h1 {
+            margin-top: 1vh;
+            font-size: 2.75em;
+            color: #242038ff;
+            font-family: 'Srisakdi', cursive;
+            position: relative;
+            padding-left: 8vw;
+        }
+        .logo .logocontent input {
+            height: 1em;
+            margin-top: 3vh;
+            font-size: 1.15em;
+            padding: 0.15em;
+        }
+        #Home ul .mySlides h3 {
+            padding-top: 25vh;
+            float: right;
+            font-size: 2em;
+            width: 40vw;
+        }
+        #Home .mySlides img {
+            width: 45vw;
+            padding-left: 5vw;
+            padding-top: 10vh;
+        }
+        #Home button.prev {
+            top: 55vh;
+        }
+        #Home button.next {
+            top: 55vh;
+        }
+    }
+    
+    @media (min-width:1440px) {
+        #Home ul .mySlides h3 {
+            padding-top: 35vh;
+            float: right;
+            font-size: 2em;
+            width: 40vw;
+        }
+        #Home .mySlides img {
+            width: 45vw;
+            padding-left: 5vw;
+            padding-top: 10vh;
+        }
+        #Home button.prev {
+            top: 55vh;
+        }
+        #Home button.next {
+            top: 55vh;
+        }
+    }
